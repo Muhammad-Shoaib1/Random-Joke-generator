@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
+    linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
+  background-size: cover;
+  background-position: center;
+}
+
+.cont {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 100%;
+  overflow: hidden;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #00796b;
+}
+
+#joke-cont {
+  position: relative;
+  min-height: 60px;
+  margin-bottom: 20px;
+}
+
+#joke {
+  font-size: 20px;
+  color: #333;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#joke.show {
+  opacity: 1;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #00796b;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+button:hover {
+  background-color: #004d40;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+footer {
+  margin-top: 20px;
+  color: #666;
+}
