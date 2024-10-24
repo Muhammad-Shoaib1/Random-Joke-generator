@@ -2,6 +2,7 @@ let jokes = [];
 let currentJokeIndex = 0;
 
 import { API_URL } from './config.js';
+
 function fetchRandomJoke() {
   return fetch(API_URL)
     .then(response => response.json())
@@ -13,6 +14,7 @@ function fetchRandomJoke() {
       console.error('Error fetching joke:', error);
     });
 }
+
 
 function displayJoke(index) {
   const joke = jokes[index];
