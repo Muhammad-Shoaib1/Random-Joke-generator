@@ -1,8 +1,9 @@
 let jokes = [];
 let currentJokeIndex = 0;
 
+import { API_URL } from './config.js';
 function fetchRandomJoke() {
-  return fetch('https://official-joke-api.appspot.com/jokes/random')
+  return fetch(API_URL)
     .then(response => response.json())
     .then(data => {
       jokes.push(data);
